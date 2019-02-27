@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <title>Survey</title>
 
+
+
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-
+    <!-- Chosen CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
+    <!-- Chosen JS -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -37,188 +46,250 @@
                                 <label for="userphoto">Link to Photo (Required)</label>
                                 <input type="text" class="form-control" id="userphoto">
                             </div>
+
+                            <!-- QUESTION ONE BOOTSTRAP -->
                             <div class="form-group">
-                                Question 1: You get carried away with ideas and random facts.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 1: You get carried away with ideas and random facts.</h7>
+                                <br>
+                                <select class="chosen-select" id="q1">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION TWO BOOTSTRAP -->
                             <div class="form-group">
-                                Question 2: You enjoy being classy.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 2: You enjoy being classy.</h7>
+                                <br>
+                                <select class="chosen-select" id="q2">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION THREE BOOTSTRAP -->
                             <div class="form-group">
-                                Question 3: You like sporting events that pits robots against wrestlers.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 3: You like sporting events that pits robots against wrestlers.</h7>
+                                <br>
+                                <select class="chosen-select" id="q3">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION FOUR BOOTSTRAP -->
                             <div class="form-group">
-                                Question 4: You are knowledgable about sports.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 4: You are knowledgable about sports.</h7>
+                                <br>
+                                <select class="chosen-select" id="q4">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION FIVE BOOTSTRAP -->
                             <div class="form-group">
-                                Question 5: You enjoy working out.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 5: You enjoy working out.</h7>
+                                <br>
+                                <select class="chosen-select" id="q5">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION SIX BOOTSTRAP -->
                             <div class="form-group">
-                                Question 6: Your friends know what your job is.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 6: Your friends know what your job is.</h7>
+                                <br>
+                                <select class="chosen-select" id="q6">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION SEVEN BOOTSTRAP -->
                             <div class="form-group">
-                                Question 7: You suffer from revertigo.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 7: You suffer from revertigo.</h7>
+                                <br>
+                                <select class="chosen-select" id="q7">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION EIGHT BOOTSTRAP -->
                             <div class="form-group">
-                                Question 8: You will go above and beyond to impress a date regardless whether or not it
-                                will freak them out.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 8: You will go above and beyond to impress a date regardless whether or not
+                                    it
+                                    will freak them out.</h7>
+                                <br>
+                                <select class="chosen-select" id="q8">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION NINE BOOTSTRAP -->
                             <div class="form-group">
-                                Question 9: You are not above using cheap tricks to get someone's phone number.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 9: You are not above using cheap tricks to get someone's phone number.</h7>
+                                <br>
+                                <select class="chosen-select" id="q9">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
+
+                            <!-- QUESTION TEN BOOTSTRAP -->
                             <div class="form-group">
-                                Question 10: You drink a lot.
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Select an Option
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item">1 (Strongly Disagree)</a>
-                                        <a class="dropdown-item">2</a>
-                                        <a class="dropdown-item">3</a>
-                                        <a class="dropdown-item">4</a>
-                                        <a class="dropdown-item">5 (Strongly Agree)</a>
+                                <h7>Question 10: You drink a lot.</h7>
+                                <br>
+                                <select class="chosen-select" id="q9=10">
+                                    <div class="dropdown-menu" id="question1" aria-labelledby="dropdownMenuButton">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </div>
-                                </div>
+                                </select>
                             </div>
-                            <button type="submit" class="btn btn-primary submit">Submit</button>
+
+                            <button type="submit" class="btn btn-primary submit" id="submitbtn">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <p><a href="../data/friends.js">API Friends List</a> | <a
-                    href="https://github.com/GMCLi/FriendFinder">GitHub Repo</a>
+
+    <div id="FriendModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="closebtn" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" style="margin: auto">Your Best Friend!!!</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-5"></div>
+                        <div class="col-lg-2">
+                            <h3 id="bestFriend" style="margin: auto"></h3>
+                        </div>
+                        <div class="col-lg-5"></div>
+                    </div>
+
+                    <img id="bestFriendPhoto" src="#" style="height: 500px; margin-left: 40px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/GMCLi/FriendFinder">GitHub
+                        Repo</a>
+            </div>
+        </footer>
 </body>
+
+</html>
+
+<script type="text/javascript">
+
+    $(".chosen-select").chosen()
+
+    $("#submitbtn").on("click", function (event) {
+        event.preventDefault();
+
+        var completeForm = true;
+
+        if ($("q1").val === "" || $("q2").val === "" || $("q3").val === "" || $("q4").val === "" || $("q5").val === "" || $("q6").val === "" || $("q7").val === "" || $("q8").val === "" || $("q9").val === "" || $("q10").val === "") {
+            completeForm = false;
+            console.log("completeForm: " + completeForm);
+        }
+
+        if (completeForm === true) {
+            var setUser = {
+                name: $("#username").val().trim(),
+                photo: $("#userphoto").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            };
+
+            var thisURL = window.location.origin;
+
+            $.post(thisURL + "/api/friends", setUser, function (data) {
+                $("#bestFriend").text(data.name);
+                $("#bestFriendPhoto").attr("src", data.photo);
+                $("#FriendModal").modal("toggle");
+            })
+        }
+    });
+</script>

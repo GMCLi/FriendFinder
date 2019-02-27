@@ -1,4 +1,4 @@
-[{
+var friendsData = [{
     "name":"Ted",
     "photo":"https://i.pinimg.com/originals/d2/e6/76/d2e676a647615bd5998a4154e8f9d0a1.jpg",
     "scores":[
@@ -16,7 +16,7 @@
 },
 {
     "name":"Marshall",
-    "photo":"https://i.pinimg.com/originals/d2/e6/76/d2e676a647615bd5998a4154e8f9d0a1.jpg",
+    "photo":"https://dvdbash.files.wordpress.com/2012/03/how_i_met_your_mother_dvd_jason_segel_dvdbash1.jpg",
     "scores":[
         2, //You get carried away with ideas and random facts.
         4, //You enjoy being classy.
@@ -32,7 +32,7 @@
 },
 {
     "name":"Lily",
-    "photo":"https://i.pinimg.com/originals/d2/e6/76/d2e676a647615bd5998a4154e8f9d0a1.jpg",
+    "photo":"https://vignette.wikia.nocookie.net/himym/images/5/5e/Lily.jpg/revision/latest?cb=20110809174952",
     "scores":[
         2, //You get carried away with ideas and random facts.
         3, //You enjoy being classy.
@@ -48,7 +48,7 @@
 },
 {
     "name":"Robin",
-    "photo":"https://i.pinimg.com/originals/d2/e6/76/d2e676a647615bd5998a4154e8f9d0a1.jpg",
+    "photo":"https://i1.wp.com/www.ofilmante.com.br/wp-content/uploads/2016/12/Robin-1-768x1024.jpg?resize=500%2C667",
     "scores":[
         3, //You get carried away with ideas and random facts.
         4, //You enjoy being classy.
@@ -64,7 +64,7 @@
 },
 {
     "name":"Barney",
-    "photo":"https://i.pinimg.com/originals/d2/e6/76/d2e676a647615bd5998a4154e8f9d0a1.jpg",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4H5ukKL9lWlGEtyOd3OxvuE2ePQXk91FyB23sS28rmOd8x3U",
     "scores":[
         4, //You get carried away with ideas and random facts.
         5, //You enjoy being classy.
@@ -78,4 +78,6 @@
         3, //You drink a lot.
     ]//total 37
 },
-]
+];
+
+module.exports = friendsData;
